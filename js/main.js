@@ -11,10 +11,10 @@ $('.tab_menu_btn a').click(function(){
 
 
 $(window).scroll(function(){
-    let tab_menu_offset = $('.tab_menu_btn').offset().top;
+    let tab_menu_offset = $('.tit_tab_menu').offset().top;
     if($(window).scrollTop() === 0){
-        $('.tab_menu_btn').removeClass('fix');
+        $('.tit_tab_menu').removeClass('fix');
     }else if($(window).scrollTop() <= tab_menu_offset){
-        $('.tab_menu_btn').addClass('fix');
+        $('.tit_tab_menu').addClass('fix');
     }
 })
